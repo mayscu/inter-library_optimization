@@ -32,8 +32,7 @@ import_collection_visual<-function(the_file,ll,c,cl,bn){
 }
 visual_data<-import_collection_visual(X2013_2016_6苏大通借通还数据,2,7,4,5)
 #只生成二维表的导入数据函数
-names(visual_data)
-
+names(visual_data)a'a'a
 campus_campus_pattern<-data.frame(loan=c("炳麟图书馆","北区图书馆","本部图书馆","敬文图书馆","阳澄湖图书馆"),coll=c("炳麟图书馆","北区图书馆","本部图书馆","敬文图书馆","阳澄湖图书馆"),stringsAsFactors = FALSE)
 a<-data.table(visual_data,key=names(visual_data)[c(1,3)])
 b<-data.table(campus_campus_pattern[1],key=names(campus_campus_pattern)[1])
